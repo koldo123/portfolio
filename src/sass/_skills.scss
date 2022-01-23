@@ -1,0 +1,144 @@
+.skills {
+  padding: 2rem;
+  background-color: #040c22;
+
+  &__list {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    &__item {
+      width: 9vw;
+      fill: rgb(255, 255, 255);
+      &__title {
+        opacity: 0;
+        color: white;
+        font-family: "Maven Pro", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+    &__item:hover {
+      transform: scale(1.2);
+      transition: transform 1s linear;
+    }
+    &__item:hover > p {
+      opacity: 1;
+      transition: transform 1s linear;
+    }
+    #html:hover {
+      fill: #e34f26;
+    }
+    #sass:hover {
+      fill: #cc6699;
+    }
+    #figma:hover {
+      fill: #f24e1e;
+    }
+    #css:hover {
+      fill: #1572b6;
+    }
+    #js:hover {
+      fill: #f7df1e;
+    }
+    #react:hover {
+      fill: #61dafb;
+    }
+    #typescript:hover {
+      fill: #3178c6;
+    }
+    #node:hover {
+      fill: #339933;
+    }
+    #mysql:hover {
+      fill: #4479a1;
+    }
+    #github:hover {
+      fill: #777777;
+    }
+    #linux:hover {
+      fill: #fcc624;
+    }
+  }
+  &__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      color: white;
+      font-size: 1rem;
+      font-family: "Maven Pro", sans-serif;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    &__icon {
+      fill: white;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    &__list {
+      &__item {
+        width: 20vw;
+        &__title {
+          font-size: 20px;
+        }
+      }
+      &__item:hover {
+        transform: inherit;
+        transition: none;
+      }
+
+      &__item > p {
+        opacity: 1;
+        transition: transform 1s linear;
+      }
+      #html {
+        fill: #e34f26;
+      }
+      #css {
+        fill: #1572b6;
+      }
+      #js {
+        fill: #f7df1e;
+      }
+      #react {
+        fill: #61dafb;
+      }
+      #typescript {
+        fill: #3178c6;
+      }
+      #node {
+        fill: #339933;
+      }
+      #mysql {
+        fill: #4479a1;
+      }
+      #github {
+        fill: #777777;
+      }
+      #linux {
+        fill: #fcc624;
+      }
+      #sass {
+        fill: #cc6699;
+      }
+      #figma {
+        fill: #f24e1e;
+      }
+    }
+    &__download {
+      &__title {
+      }
+      &__icon {
+      }
+    }
+  }
+}
