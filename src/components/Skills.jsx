@@ -1,5 +1,6 @@
 import React from "react";
 import { GiCloudDownload } from "react-icons/gi";
+import Cv from "../download/koldo_etchegaray_cv.pdf";
 
 const Skills = () => {
   return (
@@ -127,11 +128,7 @@ const Skills = () => {
           <p className="skills__list__item__title">Linux</p>
         </li>
       </ul>
-      <a
-        className="skills__download"
-        href="../download/koldo_etchegaray_cv.pdf"
-        download
-      >
+      <a className="skills__download" href={Cv} download>
         <p className="skills__download__title">Télécharger le CV</p>
         <GiCloudDownload className="skills__download__icon" />
       </a>
